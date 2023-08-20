@@ -25,15 +25,15 @@ jobs:
         name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ evalee4moran }}
-          password: ${{ eva1415926 }}
+          username: evalee4moran
+          password: eva1415926
       -
         name: Login to GitHub Container Registry
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: ${{ IJung-Lee }}
-          password: ${{ eva1415926 }}
+          username: IJung-Lee
+          password: eva1415926
       -
         name: Build and push
         uses: docker/build-push-action@v4
