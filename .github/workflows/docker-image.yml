@@ -33,4 +33,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: evalee4moran/SimpleShopMySQL:latest
+          tags: evalee4moran/simpleshop:latest
