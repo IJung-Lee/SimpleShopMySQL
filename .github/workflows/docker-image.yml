@@ -18,8 +18,14 @@ jobs:
           username: evalee4moran
           password: eva1415926
       -
+        name: Set up Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
+        
       -
         name: Build and push
         uses: docker/build-push-action@v4
@@ -27,4 +33,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: evalee4moran/clockbox:latest
+          tags: evalee4moran/SimpleShopMySQL:latest
